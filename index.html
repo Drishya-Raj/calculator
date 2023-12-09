@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div id="screen">
+            <input type="text" id="inputbox" placeholder="0"/>
+        </div>
+        <div class="row">
+            <button id="keys1" onclick="allClear()">AC</button>
+            <button id="keys1" onclick="numberClear('')">C</button>
+            <button id="keys1" onclick="buttonClick('%')">%</button>
+            <button id="keys11" onclick="buttonClick('/')">/</button>
+        </div>
+        <div class="row">
+            <button id="keys" onclick="buttonClick(7)">7</button>
+            <button id="keys" onclick="buttonClick(8)">8</button>
+            <button id="keys" onclick="buttonClick(9)">9</button>
+            <button id="keys11" onclick="buttonClick('*')">X</button>
+        </div>
+        <div class="row">
+            <button id="keys" onclick="buttonClick(4)">4</button>
+            <button id="keys" onclick="buttonClick(5)">5</button>
+            <button id="keys" onclick="buttonClick(6)">6</button>
+            <button id="keys11" onclick="buttonClick('-')">-</button>
+        </div>
+        <div class="row">
+            <button id="keys" onclick="buttonClick(1)">1</button>
+            <button id="keys" onclick="buttonClick(2)">2</button>
+            <button id="keys" onclick="buttonClick(3)">3</button>
+            <button id="keys11" onclick="buttonClick('+')">+</button>
+        </div>
+        <div class="row">
+            <button id="keys0" onclick="buttonClick(0)">0</button>
+            <button id="keys" onclick="buttonClick('.')">.</button>
+            <button id="keys11" onclick="output()">=</button>
+        </div>
+    </div>
+    <script src="script.js" ></script> 
+</body>
+</html>
